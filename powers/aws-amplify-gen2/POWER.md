@@ -343,7 +343,7 @@ Parameters: {
 1. Check AWS region configuration matches Amplify app region
 2. Verify sufficient AWS service limits (Lambda functions, S3 buckets, etc.)
 3. Review CloudFormation events in AWS console
-4. Clean up failed resources: `amplify delete`
+4. Clean up failed resources via the AWS Amplify Console or delete the CloudFormation stack directly
 5. Retry deployment with fresh environment
 
 ### Agent SOP Retrieval Issues
