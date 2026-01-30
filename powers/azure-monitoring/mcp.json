@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "azure-mcp": {
+      "command": "npx",
+      "args": [
+          "-y",
+          "@azure/mcp@latest",
+          "server",
+          "start",
+          "--namespace", "monitor",
+          "--namespace", "resourcehealth",
+          "--namespace", "applicationinsights",
+          "--namespace", "workbooks",
+          "--namespace", "grafana",
+          "--namespace", "applens"
+        ],
+      "env": {
+        "AZURE_MCP_COLLECT_TELEMETRY": "false"
+      }
+    }
+  }
+}

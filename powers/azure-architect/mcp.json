@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "microsoft-docs": {
+      "type": "http",
+      "url": "https://learn.microsoft.com/api/mcp"
+    },
+    "azure-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@azure/mcp@latest",
+        "server",
+        "start",
+        "--namespace", "documentation",
+        "--namespace", "bicepschema",
+        "--namespace", "cloudarchitect",
+        "--namespace", "bestpractices"
+      ],
+      "env": {
+        "AZURE_MCP_COLLECT_TELEMETRY": "false"
+      }
+    }
+  }
+}
