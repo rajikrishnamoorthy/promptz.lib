@@ -34,8 +34,10 @@ Follow this pattern for consistent resource naming:
 {resource-type-abbreviation}-{workload}-{environment}-{region}-{instance}
 ```
 
+> **Note:** Storage Accounts and Container Registries don't support hyphens, so use condensed lowercase alphanumeric format: `{abbreviation}{workload}{environment}{region}{instance}`
+
 **Examples:**
-- `st-myapp-prod-eus-001` (Storage Account)
+- `stmyappprodeus001` (Storage Account - no hyphens)
 - `kv-myapp-prod-eus-001` (Key Vault)
 - `cosmos-myapp-prod-eus-001` (Cosmos DB)
 - `aks-myapp-prod-eus-001` (AKS Cluster)
@@ -44,18 +46,18 @@ Follow this pattern for consistent resource naming:
 
 | Resource Type | Abbreviation | Example |
 |---------------|--------------|---------|
-| Storage Account | `st` | `stmyappprod001` |
-| Key Vault | `kv` | `kv-myapp-prod-001` |
-| Cosmos DB | `cosmos` | `cosmos-myapp-prod` |
-| SQL Server | `sql` | `sql-myapp-prod` |
-| SQL Database | `sqldb` | `sqldb-myapp-prod` |
-| PostgreSQL | `psql` | `psql-myapp-prod` |
-| MySQL | `mysql` | `mysql-myapp-prod` |
-| Redis Cache | `redis` | `redis-myapp-prod` |
-| AKS Cluster | `aks` | `aks-myapp-prod` |
-| Container Registry | `acr` | `acrmyappprod` |
-| Function App | `func` | `func-myapp-prod` |
-| App Service | `app` | `app-myapp-prod` |
+| Storage Account | `st` | `stmyappprodeus001` |
+| Key Vault | `kv` | `kv-myapp-prod-eus-001` |
+| Cosmos DB | `cosmos` | `cosmos-myapp-prod-eus` |
+| SQL Server | `sql` | `sql-myapp-prod-eus` |
+| SQL Database | `sqldb` | `sqldb-myapp-prod-eus` |
+| PostgreSQL | `psql` | `psql-myapp-prod-eus` |
+| MySQL | `mysql` | `mysql-myapp-prod-eus` |
+| Redis Cache | `redis` | `redis-myapp-prod-eus` |
+| AKS Cluster | `aks` | `aks-myapp-prod-eus` |
+| Container Registry | `acr` | `acrmyappprodeus001` |
+| Function App | `func` | `func-myapp-prod-eus` |
+| App Service | `app` | `app-myapp-prod-eus` |
 | Event Hub Namespace | `evhns` | `evhns-myapp-prod` |
 | Service Bus Namespace | `sbns` | `sbns-myapp-prod` |
 | Event Grid Topic | `evgt` | `evgt-myapp-prod` |

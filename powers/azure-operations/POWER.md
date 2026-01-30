@@ -64,7 +64,28 @@ This power has the following steering files:
   "mcpServers": {
     "azure-mcp": {
       "command": "npx",
-      "args": ["-y", "@azure/mcp@latest", "server", "start", "--namespace", "storage,keyvault,cosmos,sql,postgres,mysql,redis,aks,acr,functionapp,appservice,eventhubs,servicebus,eventgrid,signalr,role,policy,advisor,quota"],
+      "args": [
+        "-y", "@azure/mcp@latest", "server", "start",
+        "--namespace", "storage",
+        "--namespace", "keyvault",
+        "--namespace", "cosmos",
+        "--namespace", "sql",
+        "--namespace", "postgres",
+        "--namespace", "mysql",
+        "--namespace", "redis",
+        "--namespace", "aks",
+        "--namespace", "acr",
+        "--namespace", "functionapp",
+        "--namespace", "appservice",
+        "--namespace", "eventhubs",
+        "--namespace", "servicebus",
+        "--namespace", "eventgrid",
+        "--namespace", "signalr",
+        "--namespace", "role",
+        "--namespace", "policy",
+        "--namespace", "advisor",
+        "--namespace", "quota"
+      ],
       "env": {
         "AZURE_MCP_COLLECT_TELEMETRY": "false"
       }

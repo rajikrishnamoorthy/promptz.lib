@@ -90,7 +90,6 @@ Design and plan Azure infrastructure using official Microsoft documentation, bes
 | `azureterraformbestpractices` | Terraform best practices for Azure |
 
 > **Tip:** Use `learn=true` parameter on hierarchical tools to discover available subcommands.
-```
 
 ## Workflow Examples
 
