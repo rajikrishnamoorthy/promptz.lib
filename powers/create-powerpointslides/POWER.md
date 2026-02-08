@@ -1,17 +1,4 @@
----
-name: powerpoint-creator
-description: Create, edit, and manipulate PowerPoint presentations with AI assistance
-keywords:
-  - powerpoint
-  - pptx
-  - presentation
-  - slides
-  - slide deck
-  - ppt
-  - microsoft powerpoint
-  - create presentation
-  - generate slides
----
+
 
 # PowerPoint Creator Power
 
